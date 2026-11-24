@@ -1,5 +1,5 @@
 /**
- * Kinspeople Resume Review - Standalone Vanilla JS
+ * Kinsppl Resume Review - Standalone Vanilla JS
  * Zero dependencies, pure static HTML/CSS/JS for GitHub Pages
  */
 
