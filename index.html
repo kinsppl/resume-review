@@ -106,6 +106,7 @@ dialog.kp-sheet:not([data-step="calendar"]) .kp-sheet__down{display:none!importa
 /* Tiles: outline only (no shadow); mentor tile filled pastel */
 .kp-choice{box-shadow:none!important;background-image:none!important;background-color:#fff!important;border:1.5px solid #00000024!important}
 .kp-choice[data-sheet-choice="mentor"]{background-color:#e4e0f4!important;border-color:#e4e0f4!important}
+.kp-step--before{display:flex;flex-direction:column;gap:12px}.kp-tile{display:flex;align-items:flex-start;gap:14px;width:100%;text-align:left;padding:18px 20px;border-radius:24px;color:#111;background-color:#f6f6f8!important;border:.5px solid #0000000f;box-shadow:0 4px 14px -4px rgb(0 0 0/.2),0 1px 4px rgb(0 0 0/.06),inset 0 1px 1px rgb(255 255 255/.95),inset 0 -1px 1px rgb(255 255 255/.45)}.kp-tile__num{flex:none;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9999px;background:#5b4ba6;color:#fff;font-size:15px;font-weight:700;line-height:1}.kp-tile__text{display:flex;flex-direction:column;gap:4px}.kp-tile__title{font-size:17px;line-height:23px;font-weight:700;letter-spacing:-.02em}.kp-tile__desc{font-size:14px;line-height:20px;color:#0000008c}.kp-step--before .kp-primary{margin-top:4px;width:100%;min-height:52px;border-radius:9999px;background:#111;color:#fff;font-size:16px;font-weight:700;cursor:pointer;border:0}.kp-step--before .kp-primary:active{transform:scale(.98)}
 </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Free 10-Minute UI/UX and Product Design Resume Review","provider":{"@type":"Organization","name":"Kinsppl","url":"https://kinsppl-resume-review.vercel.app","email":"contact@kinsppl.ca"},"description":"Book a free 10-minute UI/UX or Product Design resume review with a working designer, or email us to become a paid mentor on Kinsppl.","areaServed":"Worldwide","offers":{"@type":"Offer","price":"0","priceCurrency":"CAD","url":"https://calendar.google.com/calendar/appointments/schedules/AcZssZ08HDnzAGcU3V9c5KdWVGoyGHBq8Mc2dGY3N-Nie0laLF5xXF4HsmzsLJoCLR6wTBr5ymdn-hml"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is included in the free call vs. the $20 Premium session?","acceptedAnswer":{"@type":"Answer","text":"The free 10-minute call covers your 10-second layout scan and turning daily duties into proof with numbers, with no payment details needed. The $20 Premium option is an active 45-minute session covering target role keyword alignment, ATS cleanup, and live draft editing."}},{"@type":"Question","name":"Who reviews my resume?","acceptedAnswer":{"@type":"Answer","text":"Sessions are hosted by Anna Jiwon Lee, a Product and Experience Designer with 5 years of experience across B2C web, mobile products, and design systems, along with practicing industry mentors."}},{"@type":"Question","name":"Who can book a session?","acceptedAnswer":{"@type":"Answer","text":"UI/UX Designers, Product Designers, and career switchers preparing a design resume, from recent graduates to senior designers."}},{"@type":"Question","name":"What makes a strong experience bullet?","acceptedAnswer":{"@type":"Answer","text":"Instead of opening bullets with \"responsible for\", build each key bullet around three parts (action verb, what you built, and the number or user outcome) so hiring teams see what you shipped and what moved."}},{"@type":"Question","name":"Where do we meet and which timezone is shown?","acceptedAnswer":{"@type":"Answer","text":"Calls take place on Google Meet from anywhere. Google Calendar shows open times in your local timezone."}},{"@type":"Question","name":"Why switch from a three-column layout to one column?","acceptedAnswer":{"@type":"Answer","text":"Multi-column layouts and graphical skill bars often scramble reading order in Applicant Tracking Systems and squeeze experience bullets into narrow strips. A clean single-column layout in one font gives hiring managers a clear Background summary and Experience bullets with numbers first."}},{"@type":"Question","name":"How do I apply as a Kinsppl mentor?","acceptedAnswer":{"@type":"Answer","text":"If you work as a UI/UX or Product Designer, email contact@kinsppl.ca with your current role, years of experience, and a LinkedIn or portfolio link. Our team will follow up with payout details and onboarding dates."}}]}</script>
@@ -129,13 +130,13 @@ dialog.kp-sheet:not([data-step="calendar"]) .kp-sheet__down{display:none!importa
   </div>
 
   <div id="sheet-step-choose" class="kp-step kp-step--choose">
-    <button type="button" class="kp-choice liquid-glass-clear" data-sheet-choice="review">
-      <svg class="kp-choice__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 4.6 5.3v6.1c0 4.7 3.1 8.3 7.4 9.8 4.3-1.5 7.4-5.1 7.4-9.8V5.3z"/></svg>
-      <span class="kp-choice__text"><span class="kp-choice__title">Resume review</span><span class="kp-choice__desc">Free 10 minutes</span></span>
-    </button>
     <button type="button" class="kp-choice liquid-glass-clear" data-sheet-choice="mentor">
       <svg class="kp-choice__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M14.6 9.3c-.4-.8-1.4-1.3-2.6-1.3-1.4 0-2.5.7-2.5 1.8 0 2.4 5 1.2 5 3.8 0 1.1-1.1 1.9-2.5 1.9-1.2 0-2.2-.5-2.6-1.4"/><path d="M12 6v2M12 16v2"/></svg>
       <span class="kp-choice__text"><span class="kp-choice__title">Be a mentor</span><span class="kp-choice__desc">Make money</span></span>
+    </button>
+    <button type="button" class="kp-choice liquid-glass-clear" data-sheet-choice="review">
+      <svg class="kp-choice__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 4.6 5.3v6.1c0 4.7 3.1 8.3 7.4 9.8 4.3-1.5 7.4-5.1 7.4-9.8V5.3z"/></svg>
+      <span class="kp-choice__text"><span class="kp-choice__title">Resume review</span><span class="kp-choice__desc">Free 10 minutes</span></span>
     </button>
   </div>
 
@@ -146,6 +147,19 @@ dialog.kp-sheet:not([data-step="calendar"]) .kp-sheet__down{display:none!importa
       <button type="button" id="btn-copy-mentor" class="liquid-glass-clear kp-pill">Copy</button>
     </div>
     <button type="button" id="btn-mentor-next" class="kp-primary">Next</button>
+  </div>
+
+  <div id="sheet-step-before" class="kp-step kp-step--before" hidden>
+    <p class="kp-step__text">Before we begin, you&#39;ll need two things ready for the video call:</p>
+    <div class="kp-tile">
+      <span class="kp-tile__num" aria-hidden="true">1</span>
+      <span class="kp-tile__text"><span class="kp-tile__title">Have your r&eacute;sum&eacute; ready</span><span class="kp-tile__desc">Have your r&eacute;sum&eacute; ready to show on the day of the video call.</span></span>
+    </div>
+    <div class="kp-tile">
+      <span class="kp-tile__num" aria-hidden="true">2</span>
+      <span class="kp-tile__text"><span class="kp-tile__title">Have your portfolio link ready</span><span class="kp-tile__desc">Next step you&#39;ll fill in your portfolio link in the booking form.</span></span>
+    </div>
+    <button type="button" id="btn-before-continue" class="kp-primary">Continue to booking</button>
   </div>
 
   <div id="sheet-step-calendar" class="kp-sheet__body" hidden>
@@ -341,11 +355,13 @@ function initBookingDialog() {
   const stepEls = {
     choose: document.getElementById("sheet-step-choose"),
     mentor: document.getElementById("sheet-step-mentor"),
+    before: document.getElementById("sheet-step-before"),
     calendar: document.getElementById("sheet-step-calendar"),
   };
   const STEP_TITLES = {
     choose: "Get started",
     mentor: "Be a mentor",
+    before: "Before we begin",
     calendar: "Pick a time",
   };
   const backBtn = document.getElementById("btn-sheet-back");
@@ -371,15 +387,17 @@ function initBookingDialog() {
   dialog.querySelectorAll("[data-sheet-choice]").forEach((btn) => {
     btn.addEventListener("click", () => {
       lastFlow = btn.getAttribute("data-sheet-choice");
-      showStep(lastFlow === "mentor" ? "mentor" : "calendar");
+      showStep(lastFlow === "mentor" ? "mentor" : "before");
     });
   });
   const mentorNext = document.getElementById("btn-mentor-next");
   if (mentorNext) mentorNext.addEventListener("click", () => showStep("calendar"));
+  const beforeContinue = document.getElementById("btn-before-continue");
+  if (beforeContinue) beforeContinue.addEventListener("click", () => showStep("calendar"));
   if (backBtn) {
     backBtn.addEventListener("click", () => {
       const cur = dialog.getAttribute("data-step");
-      showStep(cur === "calendar" && lastFlow === "mentor" ? "mentor" : "choose");
+      showStep(cur === "before" || (cur === "calendar" && lastFlow === "review") ? "choose" : cur === "calendar" && lastFlow === "mentor" ? "mentor" : "choose");
     });
   }
 
